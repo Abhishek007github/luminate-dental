@@ -1,0 +1,145 @@
+.section-service {
+    width: 100%;
+    background-color: var(--color-black);
+    .services {
+        width: 100%;
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+        .heading-grid {
+            width: 100%;
+            .service-text-block {
+                width: 100%;
+                flex-direction: column;
+                .heading-1 {
+                    width: 70%;
+                    font-size: 8.5rem;
+                    line-height: 0.9;
+                    flex-direction: column;
+                    margin-bottom: 1.7rem;
+                    .gradient-text {
+                        background-image: linear-gradient(270deg, #a6b9ff, var(--color-pink));
+                        color: rgba(255, 255, 255, 0);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                    }
+                }
+                .paragraph {
+                    width: 50%;
+                    margin-bottom: 1.3rem;
+                    text-align: center;
+                }
+            }
+        }
+        .service-box {
+            padding-top: 8rem;
+            gap: 1.6rem;
+            .service-box-block {
+                width: 100%;
+                .service-box-container {
+                    width: 100%;
+                    height: 100%;
+                    .text-box-top {
+                        border-radius: 0.8rem;
+                        background-color: #1a1a1a;
+                        color: white;
+                        border: 0.1px solid #313131;
+                        padding-top: 2.8rem;
+                        position: relative;
+                        flex-wrap: wrap;
+                        gap: 2rem;
+                        flex-direction: column;
+                        text-align: center;
+                        .heading-3 {
+                            font-size: 2.4rem;
+                            padding-inline: 1.5rem;
+                        }
+                        .service-box-image {
+                            max-width: 7rem;
+                            min-width: 7rem;
+                            margin: 0 auto;
+                            padding-block: 2rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .retainer {
+                            max-width: 14rem;
+                            min-width: 14rem;
+                        }
+                        .glass-tool {
+                            max-width: 12rem;
+                            min-width: 12rem;
+                        }
+                        .text-box-bottom {
+                            flex-direction: column;
+                            gap: 2rem;
+                            p {
+                                padding-inline: 1.8rem;
+                            }
+                            a {
+                                width: 100%;
+                                font-size: 1.4rem;
+                                font-weight: 600;
+                                color: var(--color-black);
+                                background-color: var(--color-pink);
+                                text-decoration: none;
+                                padding-block: 1.6rem;
+                                border-bottom-left-radius: 0.8rem;
+                                border-bottom-right-radius: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .box-1 {
+                grid-area: 4 / 2 / 8 / 6;
+                border-radius: 0.8rem;
+                border: 0.1px solid #313131;
+                background-color: var(--color-pink);
+                a {
+                    text-decoration: none;
+                    flex-direction: column;
+                    .service-arrow {
+                        width: 100%;
+                        color: white;
+                        .arrow-image {
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            margin: 0 auto;
+                            max-width: 7rem;
+                            min-width: 7rem;
+                            max-height: 7rem;
+                            min-height: 7rem;
+                            display: flex;
+                            border-radius: 50%;
+                            background-color: #1a1a1a;
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .heading-3 {
+                        font-size: 2.6rem;
+                        font-weight: 300;
+                        margin-top: 1rem;
+                        color: var(--color-black);
+                    }
+                }
+            }
+            .box-2 {
+                grid-area: 2 / 6 / 6 / 10;
+            }
+            .box-3 {
+                grid-area: 3 / 10 / 7 / 14;
+            }
+            .box-4 {
+                grid-area: 7 / 10 / 11 / 14;
+            }
+            .box-5 {
+                grid-area: 6 / 6 / 10 / 10;
+            }
+        }
+    }
+}

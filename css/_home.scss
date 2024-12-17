@@ -1,0 +1,156 @@
+.section-home {
+    width: 100%;
+    height: 100vh;
+    // position: relative;
+    top: 0;
+    .home-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .home-block {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom-left-radius: 2.5rem;
+            border-bottom-right-radius: 2.5rem;
+            background-color: #181818;
+            border: 1px solid #363636;
+            .home-tooth-block {
+                width: 100%;
+                margin: 0 auto;
+                .home-left-text {
+                    // width: 15%;
+                    margin-top: -6.5rem;
+                    margin-left: -100px;
+                    transform: translateX(30%);
+                    h1 {
+                        width: 100%;
+                        font-size: 5rem;
+                    }
+                    .gradient-text {
+                        background-image: linear-gradient(270deg, #a6b9ff, var(--color-pink));
+                        color: #fff0;
+                        background-clip: text;
+                    }
+                }
+                .home-center-animation {
+                    width: 45%;
+                    position: relative;
+                    top: 0;
+                    flex-direction: column;
+                    .image-pettern {
+                        width: 130%;
+                        height: 145%;
+                        position: absolute;
+                        top: -35%;
+                        z-index: 1;
+                        pointer-events: none;
+                        background: url("/image/66c6657d57efef76a881d6da_erghdergbh - Copy.avif");
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        opacity: 0.33;
+                    }
+
+                    .image-tooth {
+                        z-index: 4;
+                        margin-left: 4rem;
+                        img {
+                            min-width: 24rem;
+                            max-width: 24rem;
+                            height: 100%;
+                        }
+                    }
+                    .text-box {
+                        margin-top: 4rem;
+                        gap: 1rem;
+                        flex-direction: column;
+                        p {
+                            text-align: center;
+                        }
+                        .text-respons {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            
+                            h1 {
+                                width: 100%;
+                                font-size: 4rem;
+                                line-height: 4.5rem;
+                                font-family: $font-family-PT;
+                                font-weight: 600;
+                                display: none;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: row;
+                                text-align: center;
+                                flex-wrap: wrap;
+                                gap: 0.8rem;
+                                  
+                            }
+                        }
+                    }
+                  
+                }
+                .home-right-text {
+                    // width: 15%;
+                    margin-top: -6.5rem;
+                    transform: translateX(-30%);
+                    h1 {
+                        width: 100%;
+                        font-size: 5rem;
+                    }
+                    .gradient-text {
+                        background-image: linear-gradient(270deg, #a6b9ff, var(--color-pink));
+                        color: #fff0;
+                        background-clip: text;
+                    }
+                }
+            }
+            .home-image-graphic-1 {
+                max-width: 7rem;
+                position: absolute;
+                bottom: 11%;
+                left: 22%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .home-image-graphic-2 {
+                max-width: 6rem;
+                position: absolute;
+                top: -4%;
+                right: 20%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .image-wrapper {
+            max-width: 18rem;
+            position: absolute;
+        }
+        .dentist-tool {
+            top: 16%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .teeth {
+            bottom: 12%;
+            right: 6%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

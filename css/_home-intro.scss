@@ -1,0 +1,76 @@
+.home-intro {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    background-color: var(--color-black);
+    .intro-content {
+        width: 100%;
+        padding-top: 12rem;
+        padding-bottom: 5rem;
+        .heading-grid {
+            width: 80%;
+            margin: 0 auto;
+            .home-intro-text-block {
+                text-align: center;
+                padding-block: 3rem;
+                margin-inline: 4rem;
+                flex-direction: column;
+                gap: 2rem;
+                .heading-1 {
+                    width: 70%;
+                    font-size: 5.3rem;
+                    letter-spacing: -0.1rem;
+                    line-height: 5.2rem;
+                    .italic {
+                        font-style: italic;
+                        font-family: "PT Serif", sans-serif;
+                    }
+                }
+                .paragraph {
+                    width: 55%;
+                    letter-spacing: -0.03rem;
+                }
+            }
+        }
+        .intro-images-block {
+            width: 100%;
+            padding-top: 20rem;
+            .intro-images {
+                max-width: 115%;
+                justify-content: space-between;
+                padding-block: 3rem;
+                .image-block {
+                    position: relative;
+                    top: 0;
+                    min-width: 14em;
+                    max-width: 14rem;
+                    height: 240px;
+                    overflow: hidden;
+                    border-radius: 0.6rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .intro-img_1 {
+                    rotate: -15deg;
+                }
+                .intro-img_2 {
+                    top: -87px;
+                    rotate: -10deg;
+                }
+                .intro-img_3 {
+                    top: -142px;
+                }
+                .intro-img_4 {
+                    top: -87px;
+                    rotate: 10deg;
+                }
+                .intro-img_5 {
+                    rotate: 15deg;
+                }
+            }
+        }
+    }
+}

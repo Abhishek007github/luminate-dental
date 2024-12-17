@@ -1,0 +1,182 @@
+.navigation-bar {
+    width: 100%;
+    height: 15vh;
+    position:absolute;
+    top: 0;
+    z-index: 99999;
+    background-color: transparent;
+    .header-navigation {
+        width: 100%;
+        height: 100%;
+        padding-block: 1rem;
+        justify-content: space-between;
+        .nav-left {
+            width: 13%;
+            a {
+                position: relative;
+                z-index: 10;
+                text-decoration: none;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .nav-right {
+            width: 8%;
+            
+            .menu-open {
+                width: 100%; 
+                    cursor: pointer;
+                    border-radius: 1rem;
+                    background-color: var(--color-pink);
+                    padding-block: 1rem;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-family: "Golos Text", sans-serif;
+                    font-weight: 500;
+                    transition: all 0.35s ease-in;
+                }
+            .nav-right:hover {
+                opacity: 0.83;
+            }
+
+        }
+       
+
+        .menu{
+            width: 100%;
+            height: 100vh;
+            position:fixed;
+            left: 0;
+            right: 0;
+            top: -100%;
+            z-index: 9;
+            background-color: #060709;
+            .menu-wrapper{
+                width: 100%;
+                height: 100%;
+                .menu-inner {
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 1.7rem;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    position: relative;
+                    .menu-left{
+                        width: 40%;
+                        height: 100%;
+                        border-top: 1px solid #ffffff1a;
+                        border-right: 1px solid #ffffff1a;
+                        padding-left: 1rem;
+                        .menu-project-block{
+                            width: 100%;
+                            padding-right: 1.7rem;
+                            .menu-project-video{
+                                max-width: 35rem;
+                                height: 330px;
+                                margin-top: 2rem;
+                                border-radius: 0.7rem;
+                                overflow: hidden;
+                                background-color: black;
+                                video{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    border-radius: 0.7rem;
+                                }
+                            }
+                          .project-details{
+                            width: 100%;
+                            .project-detail-block{
+                                width: 100%;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                padding-top: 1.5rem;
+                                .project-heading{
+                                    font-size: 1.4rem;
+                                    font-weight: 600;
+                                    font-family: $font-family-PT;
+                                    color: #fff9;
+                                }
+                               .contact-text{
+                                width: 100%;
+                                padding-top: 0.7rem;
+                                a{
+                                    font-size: 1.4rem;
+                                    font-weight: 600;
+                                    font-family: $font-family-PT;
+                                    text-decoration: none;
+                                color: white;
+                                }
+                               } 
+                            }
+                          }  
+                          .menu-copyright-block{
+                            width: 100%;
+                            padding-top: 5rem;
+                            .menu-copyright-heading{
+                                font-size: 1.7rem;
+                                font-family: $font-family-PT;
+                                font-weight: 600;
+                                color: 
+                                white;
+                            }
+                            .menu-copyright-text{
+                                padding-top: 1rem;
+                                font-size: 1.3rem;
+                                font-family: $font-family-PT;
+                                font-weight: 500;
+                                color: #fff9;
+                            }
+                          }
+                        }
+                    }
+                    .close{
+                        position: absolute;
+                        right: 25px;
+                        top: 30px;
+                        font-size: 2.2rem;
+                        font-family: $font-family-PT;
+                        font-weight: 600;
+                        color: white;
+                        cursor: pointer;
+                        // background-color: red;
+                    }
+
+                    .menu-right{
+                        width: 60%;
+                        padding-left: 6rem;
+                        padding-top: 8rem;
+                        border-top: 1px solid #ffffff1a;
+                        ul{
+                            width: 100%;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            overflow: hidden;
+                            li{
+                                width: 100%;
+                                list-style: none;
+                                overflow: hidden;
+                                a{
+                                    transition: color .5s;
+                                   display: inline-block;
+                                    text-decoration: none;
+                                    font-size: 6rem;
+                                    font-family: $font-family-PT;
+                                    font-weight: 600;
+                                    color: white;
+                                }
+                            }
+                            li:hover a{
+                                color: pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
